@@ -2,10 +2,10 @@
 include_once('phpGrid/conf.php');
 $_GET['currentPage'] = 'employees';
 include_once('menu.php');
-require('authenticate.php');
+//require('authenticate.php');
 
-$employee_info = new C_DataGrid('SELECT BranchId, EmployeeId, FirstName, MidInit, LastName, Gender, DOB, Telephone, Address, Salary FROM employee', 'EmployeeId', 'employee');
-$employee_info->set_sortname('EmployeeId', 'DESC');
+$employee_info = new C_DataGrid('SELECT BranchId, EmployeeId, FirstName, MidInit, LastName, Gender, DOB, Telephone, Address, Salary FROM employee', 'EmployeeId', 'Employees');
+$employee_info->set_sortname('EmployeeId', 'ASC');
 $employee_info->set_col_hidden('id', false);
 
 // setting the column headings

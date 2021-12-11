@@ -2,11 +2,11 @@
 include_once('phpGrid/conf.php');
 $_GET['currentPage'] = 'equipment';
 include_once('menu.php');
-require('authenticate.php');
+//require('authenticate.php');
 
 $equipment_info = new C_DataGrid('SELECT BranchId, EquipmentId, EmployeeId, EquipmentName, 
-Date_of_Last_Service, Date_of_Next_Service FROM equipment', 'EquipmentId', 'equipment');
-$equipment_info -> set_sortname('EquipmentId', 'DESC');
+Date_of_Last_Service, Date_of_Next_Service FROM equipment', 'EquipmentId', 'Equipment');
+$equipment_info -> set_sortname('EquipmentId', 'ASC');
 $equipment_info -> set_col_hidden('id', false);
 
 // setting the column headings

@@ -8,9 +8,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-body {
-    background-color: rgb(0, 0, 240);
-}
+/*body {*/
+/*    background-color: rgb(0, 0, 240);*/
+/*}*/
 .login {
     width: 400px;
     background-color: #ffffff;
@@ -64,3 +64,148 @@ body {
 
 
 /* Nav bar - menu.php */
+.navtop {
+    background-color: #2f3947;
+    height: 60px;
+    width: 100%;
+    border: 0;
+}
+.navtop div {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+.navtop div h1, .navtop div a {
+    display: inline-flex;
+    align-items: center;
+}
+.navtop div h1 {
+    flex: 1;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    color: #eaebed;
+    font-weight: normal;
+}
+.navtop div a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #c1c4c8;
+    font-weight: bold;
+}
+.navtop div a i {
+    padding: 2px 8px 0 0;
+}
+.navtop div a:hover {
+    color: #eaebed;
+}
+body.loggedin {
+    background-color: #f3f4f7;
+}
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+.content h2 {
+    margin: 0;
+    padding: 25px 0;
+    font-size: 22px;
+    border-bottom: 1px solid #e0e0e3;
+    color: #4a536e;
+}
+.content > p, .content > div {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+    padding: 25px;
+    background-color: #fff;
+}
+.content > p table td, .content > div table td {
+    padding: 5px;
+}
+.content > p table td:first-child, .content > div table td:first-child {
+    font-weight: bold;
+    color: #4a536e;
+    padding-right: 15px;
+}
+.content > div p {
+    padding: 5px;
+    margin: 0 0 10px 0;
+}
+
+.pg_notify{
+    display: none;
+}
+
+/*  */
+body {
+    padding: 0 15px;
+    margin: 0 15px;
+    font-family: lato, sans-serif, arial;
+}
+.ui-jqgrid-htable th,
+.ui-jqgrid tr.jqgrow td{
+    text-transform: capitalize;
+}
+.ui-jqgrid-htable th div{
+    font-weight: bold;
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #162210;
+}
+
+#menu ul li {
+    float: left;
+}
+
+#menu  ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#menu  ul li a:hover,
+#menu .active {
+    background-color: #ddd;
+    color:black;
+}
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+.ui-tabs-panel #subtitle{
+    display:none;
+}
+
+ul.barcode {
+    list-style-type: none;
+}
+
+ul.barcode li > div {
+    text-align: center;
+    float: left;
+    margin: 30px;
+    max-width: 300px;
+    margin-bottom:15px;
+}
+
+.number-columns{
+    font-weight: 800 !important;
+}
+.add-new-row {
+    padding:15px;
+    margin:15px;
+    font-size:16px;
+    background:rgb(105, 88, 88);
+    color:white;
+}

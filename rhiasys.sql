@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 31, 2021 at 10:00 PM
+-- Generation Time: Dec 11, 2021 at 12:19 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `rhiasys`
 --
+CREATE DATABASE IF NOT EXISTS `rhiasys` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `rhiasys`;
 
 -- --------------------------------------------------------
 

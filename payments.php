@@ -2,11 +2,11 @@
 include_once('phpGrid/conf.php');
 $_GET['currentPage'] = 'payments';
 include_once('menu.php');
-require('authenticate.php');
+//require('authenticate.php');
 
 $payment_data = new C_DataGrid('SELECT BranchId, PId, SupplierId, Service, Amount, Payment_to, 
-Date_of_Payment FROM payments', 'PId', 'payments');
-$payment_data->set_sortname('PId', 'DESC');
+Date_of_Payment FROM payments', 'PId', 'Payments');
+$payment_data->set_sortname('PId', 'ASC');
 $payment_data->set_col_hidden('id', false);
 
 // setting the column headings

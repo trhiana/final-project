@@ -38,7 +38,8 @@ if ($statement = $connect -> prepare('select id, password from users where usern
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
-            header('Location: ');
+            $_SESSION['success'] = "You are now logged in";
+            header('Location: branches.php');
         } else {
             // Password is incorrect
             echo 'Incorrect username and/or password!';
